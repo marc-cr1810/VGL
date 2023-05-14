@@ -12,8 +12,10 @@ project "VGL"
 
 	files
 	{
-		"src/**.h",
+		"include/**.h",
 		"src/**.cpp",
+		"examples/**.h",
+		"examples/**.cpp",
 		"vendor/glm/glm/**.hpp",
 		"vendor/glm/glm/**.inl"
 	}
@@ -26,7 +28,7 @@ project "VGL"
 
 	includedirs
 	{
-		"src",
+		"include",
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.glm}",
 		"%{IncludeDir.VulkanSDK}"
